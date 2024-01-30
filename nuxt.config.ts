@@ -2,7 +2,18 @@
 export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   devtools: { enabled: true },
-
+  nitro: {
+    storage: {
+      data: {
+        driver: 'vercelKV'
+        /* Vercel KV driver options */
+      }
+    }
+  },
+  routeRules: {
+    // prerender index route by default
+    '/': { prerender: true },
+  },
   postcss: {
     plugins: {
       tailwindcss: {}, 

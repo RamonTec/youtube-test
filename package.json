@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build",
+    "build": "nuxt build --preset=vercel_edge",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
@@ -29,6 +29,7 @@
     "@headlessui/vue": "^1.7.17",
     "@heroicons/vue": "^2.1.1",
     "@mdi/js": "^7.4.47",
+    "@vercel/kv": "^0.2.4",
     "axios": "^1.6.7",
     "feather-icons": "^4.29.1",
     "firebase": "^10.7.2",
