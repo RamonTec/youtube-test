@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar {
+  @layer bg-transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  @layer bg-secondary-dark;
+}
+
+.scrollbar-hidden::-webkit-scrollbar-thumb {
+  @layer bg-transparent;
+}
+
+.scrollbar-hidden:hover::-webkit-scrollbar-thumb {
+  @layer bg-secondary-border;
+}
